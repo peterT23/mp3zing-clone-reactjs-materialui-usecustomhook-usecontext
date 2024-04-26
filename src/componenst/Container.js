@@ -7,7 +7,7 @@ import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
 import useMusicPlayer from "../hooks/useMusicPlayer";
 
 function Container() {
-  const { isPlaying, currentTrack } = useMusicPlayer();
+  const { currentTrack } = useMusicPlayer();
 
   return (
     <div>
