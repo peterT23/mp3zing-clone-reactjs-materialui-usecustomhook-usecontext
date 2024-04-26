@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { Box, Typography, Slider, IconButton, Stack } from "@mui/material";
 
 import { styled, useTheme } from "@mui/material/styles";
@@ -47,17 +47,23 @@ function Controller() {
       : "rgba(0,0,0,0.4)";
 
   const volume = useRef(10);
+
   const [currentTime, setCurrentTime] = useState(state.audioPlayer.currentTime);
 
-  useEffect(() => {
-    // setCurrentTime(state.audioPlayer.currentTime);
-    const timecount = setInterval(() => {
-      setCurrentTime(state.audioPlayer.currentTime);
-    }, 100);
-    return () => {
-      clearInterval(timecount);
-    };
-  }, [state.audioPlayer.currentTime]);
+  const listenAudio = state.audioPlayer;
+  listenAudio.addEventListener("timeupdate", () => {
+    setCurrentTime(listenAudio.currentTime);
+  });
+
+  // useEffect(() => {
+  //   // setCurrentTime(state.audioPlayer.currentTime);
+  //   const timecount = setInterval(() => {
+  //     setCurrentTime(state.audioPlayer.currentTime);
+  //   }, 100);
+  //   return () => {
+  //     clearInterval(timecount);
+  //   };
+  // }, [state.audioPlayer.currentTime]);
 
   // useEffect(() => {
   //   setCurrentTime(state.audioPlayer.currentTime);
