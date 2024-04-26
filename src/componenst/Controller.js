@@ -1,12 +1,5 @@
-import React, { useRef, useState, useEffect, useCallback } from "react";
-import {
-  Box,
-  Paper,
-  Typography,
-  Slider,
-  IconButton,
-  Stack,
-} from "@mui/material";
+import React, { useRef, useState, useEffect } from "react";
+import { Box, Typography, Slider, IconButton, Stack } from "@mui/material";
 
 import { styled, useTheme } from "@mui/material/styles";
 

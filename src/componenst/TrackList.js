@@ -1,19 +1,10 @@
 import React from "react";
-import {
-  Paper,
-  Card,
-  Box,
-  CardContent,
-  Typography,
-  IconButton,
-  Avatar,
-  Stack,
-} from "@mui/material";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
+import { Paper, Typography, IconButton, Avatar, Stack } from "@mui/material";
+// import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
+// import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+// import SkipNextIcon from "@mui/icons-material/SkipNext";
 import useMusicPlayer from "../hooks/useMusicPlayer";
-import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
+// import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
 import PlayArrowRounded from "@mui/icons-material/PlayArrowRounded";
 import PauseRounded from "@mui/icons-material/PauseRounded";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Paper, Card, Typography, Stack, Avatar } from "@mui/material";
+import { Paper, Typography, Stack, Avatar } from "@mui/material";
 import HeadphonesOutlinedIcon from "@mui/icons-material/HeadphonesOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import useMusicPlayer from "../hooks/useMusicPlayer";
@@ -8,7 +8,7 @@ function SongInfor() {
   const {
     trackList,
     currentTrackName,
-    isPlaying,
+
     currentTrack,
     // currentTrack,
   } = useMusicPlayer();
