@@ -15,7 +15,7 @@ code {
 .container {
   width: 350px;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 5px;
 
   height: 650px;
   background: linear-gradient(180deg, #a992ce, #150a29);
